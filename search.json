@@ -1,16 +1,16 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "param_quarto.html",
+    "href": "param_quarto.html",
+    "title": "Testing param for quarto",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "Reading layer `dat' from data source \n  `/Users/johnhall/Documents/quarto-demo/data/dat.geojson' using driver `GeoJSON'\nSimple feature collection with 30 features and 8 fields\nGeometry type: MULTIPOLYGON\nDimension:     XY\nBounding box:  xmin: -179.2311 ymin: 51.17509 xmax: 179.8597 ymax: 71.43979\nGeodetic CRS:  NAD83\n\n\n\nReport for AK\nAK has 30 counties.\n\n\nA test with a map\n\n\n\n\n\n\n\n\n\nA quick plot\n\n\nWarning: Removed 1 rows containing missing values (`geom_point()`)."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Quarto Demo",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+    "text": "Before you render this file with quarto, you will need to make sure that the quarto cli and the following R packages are available in your local environment (shell/terminal)… ::: {.cell}\nrequired_packages &lt;- c(\n  \"markdown\",\n  \"tidyverse\",\n  \"palmerpenguins\"\n)\n:::\n\n## Initial setup ----\n#| echo: false\n#| output: false\n#| warning: false\n\nsuppressMessages({\n    if (!require(\"tidyverse\") || !require(\"palmerpenguins\")) {\n        options(\n         repos = c(CRAN = \"https://cran.rstudio.com\")\n        )\n        install.packages(required_packages)\n    }\n})\n\nOnce this dependency is satisfied, render this README (as markdown) with this command:\nquarto render README.qmd --cache-refresh --output README.md --to gfm  --verbose\nRender the entire project with this npm command:\nnpm run build:all\nRender the entire project as markdown with this npm command:\nnpm run build:markdown"
   }
 ]
